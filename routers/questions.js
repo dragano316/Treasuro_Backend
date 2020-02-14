@@ -16,7 +16,7 @@ router.post("/questions", async (req, res) => {
 
   // console.log(mystr1)
 
-  question.link = `http://127.0.0.1:5500/questions.html?ans=${mystr}&level=${req.body.level}`;
+  question.link = `http://jssmmil.in/questions.html?ans=${mystr}&level=${req.body.level}`;
   await question.save();
   res.send(question);
 });
