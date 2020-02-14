@@ -20,6 +20,22 @@ router.post("/create", async (req, res) => {
   }
 });
 
+
+
+router.get("/extract",async(req,res)=>{
+  try{
+      const uniqueids=await Unique.find({})
+      // console.log(uniqueids)
+      return res.send({uniqueids})
+}
+catch(e){
+  return res.status(401).send(e)
+}
+})
+
+
+
+
 router.get("/", (req, res) => {
   res.send("Treasuro Working Fine");
 });
