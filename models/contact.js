@@ -1,17 +1,17 @@
-"use strict"
-const mongoose=require('mongoose')
+"use strict";
+const mongoose = require("mongoose");
 
-const Contact=new mongoose.Schema({
-    comment:{
-        type:String,
-        required:true
-    }
-    // stringId:{
-    //     type:String
-    // },
-    // used:Boolean
-})
+const Contact = new mongoose.Schema({
+  comment: {
+    type: String,
+    required: true
+  }
+  // stringId:{
+  //     type:String
+  // },
+  // used:Boolean
+});
 
-const Contactcomment=mongoose.model('Contactcomment',Contact)
+const Contactcomment = mongoose.model("Contactcomment", Contact);
 
-module.exports=Contactcomment
+module.exports = Contactcomment;
