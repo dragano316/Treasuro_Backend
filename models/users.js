@@ -16,11 +16,11 @@ const UserSchema = new mongoose.Schema({
     type: Number,
     trim: true,
     // required:true,
-    validate(value) {
-      if (value.toString().length != 10) {
-        throw new Error("Number should contain 10 digits");
-      }
-    }
+    // validate(value) {
+    //   if (value.toString().length != 10) {
+    //     throw new Error("Number should contain 10 digits");
+    //   }
+    // }
   },
   Email: {
     type: String,
