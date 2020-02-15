@@ -71,6 +71,10 @@ const UserSchema = new mongoose.Schema({
   freeze: {
     type: Boolean,
     default: false
+  },
+  lucky:{
+      type:Number,
+      default:3
   }
 });
 
