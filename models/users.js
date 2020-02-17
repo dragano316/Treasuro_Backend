@@ -61,7 +61,7 @@ const UserSchema = new mongoose.Schema({
   },
   top: {
     type: Number,
-    default: 10
+    default: 5
   },
 
   attempts: {
